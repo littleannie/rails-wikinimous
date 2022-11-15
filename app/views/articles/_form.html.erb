@@ -1,0 +1,7 @@
+<%= form_with model: article do |f| %>
+  <%= f.label :title, "Article title", :class =>"form-label" %>
+  <%= f.text_field :title, :class =>"form-control mb-3" %>
+  <%= f.label :content, "Article content", :class =>"form-label" %>
+  <%= f.text_area :content, :class =>"form-control mb-3" %>
+  <%= f.submit :Submit, :class =>"btn btn-primary mt-3" %>
+<% end %>
